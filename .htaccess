@@ -1,0 +1,5 @@
+# BLOQUEAR ATAQUE DE httpOnly #
+# BLOCK ATTACK FROM httpOnly #
+<IfModule mod_headers.c>
+    Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
+</IfModule>
